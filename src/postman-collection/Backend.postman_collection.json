@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "053d0cb7-5a07-4c23-a750-77ea3af070fe",
+		"name": "Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "matias2@prueba.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "prueba",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:2000/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2000/signin?email=matias2@prueba.com&password=prueba",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"signin"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "matias2@prueba.com"
+						},
+						{
+							"key": "password",
+							"value": "prueba"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile - secret_token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2000/paramtoken/profile?secret_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVlNjVjZTRmMjk3MDFiMzViODU5NmFhZSIsImVtYWlsIjoibWF0aWFzMkBwcnVlYmEuY29tIn0sImlhdCI6MTU4MzczMDI4M30.YGgTFGNAcQfLsxi49NdAjiPT5zgleMEY0TwizTDkres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"paramtoken",
+						"profile"
+					],
+					"query": [
+						{
+							"key": "secret_token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVlNjVjZTRmMjk3MDFiMzViODU5NmFhZSIsImVtYWlsIjoibWF0aWFzMkBwcnVlYmEuY29tIn0sImlhdCI6MTU4MzczMDI4M30.YGgTFGNAcQfLsxi49NdAjiPT5zgleMEY0TwizTDkres"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trains Authorization Bearer Token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVlNjViYjgxZDZiOTdhNDcxMGVhMmQ4ZCIsImVtYWlsIjoiam9yZ2VlYXZAcHJ1ZWJhLmNvbSJ9LCJpYXQiOjE1ODM3MjcwOTZ9.iGHesW_POTHAsZ8BSkyEKm2c7ynWvHAIJSizHHEoax8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2000/bearertoken/trains",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"bearertoken",
+						"trains"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Train - Authorization Bearer Token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVlNjViYjgxZDZiOTdhNDcxMGVhMmQ4ZCIsImVtYWlsIjoiam9yZ2VlYXZAcHJ1ZWJhLmNvbSJ9LCJpYXQiOjE1ODM3MjcwOTZ9.iGHesW_POTHAsZ8BSkyEKm2c7ynWvHAIJSizHHEoax8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "inputTestData",
+							"value": "{\n    \"data\": [\n        {\n                \"day_0\": 27,\n                \"day_1\": 0,\n                \"day_2\": 0,\n                \"day_3\": 0,\n                \"day_4\": 0,\n                \"day_5\": 0,\n                \"day_6\": 0,\n                \"T000000\": 9,\n                \"T001500\": 13,\n                \"T003000\": 10,\n                \"T004500\": 7,\n                \"T010000\": 1,\n                \"T011500\": 3,\n                \"T013000\": 1,\n                \"T014500\": 1,\n                \"T020000\": 1,\n                \"T021500\": 0,\n                \"T023000\": 0,\n                \"T024500\": 1,\n                \"T030000\": 0,\n                \"T031500\": 2,\n                \"T033000\": 3,\n                \"T034500\": 0,\n                \"T040000\": 2,\n                \"T041500\": 4,\n                \"T043000\": 0,\n                \"T044500\": 2,\n                \"T050000\": 5,\n                \"T051500\": 6,\n                \"T053000\": 5,\n                \"T054500\": 1,\n                \"T060000\": 4,\n                \"T061500\": 8,\n                \"T063000\": 5,\n                \"T064500\": 12,\n                \"T070000\": 13,\n                \"T071500\": 14,\n                \"T073000\": 17,\n                \"T074500\": 16,\n                \"T080000\": 20,\n                \"T081500\": 21,\n                \"T083000\": 29,\n                \"T084500\": 34,\n                \"T090000\": 28,\n                \"T091500\": 35,\n                \"T093000\": 36,\n                \"T094500\": 41,\n                \"T100000\": 31,\n                \"T101500\": 44,\n                \"T103000\": 38,\n                \"T104500\": 36,\n                \"T110000\": 41,\n                \"T111500\": 56,\n                \"T113000\": 42,\n                \"T114500\": 49,\n                \"T120000\": 41,\n                \"T121500\": 38,\n                \"T123000\": 47,\n                \"T124500\": 35,\n                \"T130000\": 55,\n                \"T131500\": 34,\n                \"T133000\": 36,\n                \"T134500\": 50,\n                \"T140000\": 45,\n                \"T141500\": 38,\n                \"T143000\": 35,\n                \"T144500\": 37,\n                \"T150000\": 41,\n                \"T151500\": 38,\n                \"T153000\": 36,\n                \"T154500\": 41,\n                \"T160000\": 35,\n                \"T161500\": 43,\n                \"T163000\": 39,\n                \"T164500\": 44,\n                \"T170000\": 42,\n                \"T171500\": 41,\n                \"T173000\": 48,\n                \"T174500\": 45,\n                \"T180000\": 47,\n                \"T181500\": 41,\n                \"T183000\": 48,\n                \"T184500\": 28,\n                \"T190000\": 52,\n                \"T191500\": 47,\n                \"T193000\": 62,\n                \"T194500\": 57,\n                \"T200000\": 40,\n                \"T201500\": 48,\n                \"T203000\": 41,\n                \"T204500\": 35,\n                \"T210000\": 38,\n                \"T211500\": 34,\n                \"T213000\": 50,\n                \"T214500\": 40,\n                \"T220000\": 31,\n                \"T221500\": 32,\n                \"T223000\": 42,\n                \"T224500\": 25,\n                \"T230000\": 18,\n                \"T231500\": 12,\n                \"T233000\": 16,\n                \"T234500\": 15,\n                \"_id\": \"5e61b8d7f84daa52fee0d46a\",\n                \"date\": \"2019-03-25 00:00:00 UTC\"\n            }\n    ]\n}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:2000/bearertoken/train",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"bearertoken",
+						"train"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

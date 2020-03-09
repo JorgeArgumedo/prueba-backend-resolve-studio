@@ -1,0 +1,158 @@
+import { Schema, model } from "mongoose";
+
+const TrainSchema = new Schema({
+    date: {
+        type: String,
+        required: true,
+        trim: true,
+    },
+    day_0: {
+        type: Number,
+        default: 0,
+        validate(value) {
+            if (value < 0) throw new Error("Day 0 no puede ser negativo");
+        },
+    },
+    day_1: {
+        type: Number,
+        default: 0,
+        validate(value) {
+            if (value < 0) throw new Error("Day 1 no puede ser negativo");
+        },
+    },
+    day_2: {
+        type: Number,
+        default: 0,
+        validate(value) {
+            if (value < 0) throw new Error("Day 2 no puede ser negativo");
+        },
+    },
+    day_3: {
+        type: Number,
+        default: 0,
+        validate(value) {
+            if (value < 0) throw new Error("Day 3 no puede ser negativo");
+        },
+    },
+    day_4: {
+        type: Number,
+        default: 0,
+        validate(value) {
+            if (value < 0) throw new Error("Day 4 no puede ser negativo");
+        },
+    },
+    day_5: {
+        type: Number,
+        default: 0,
+        validate(value) {
+            if (value < 0) throw new Error("Day 5 no puede ser negativo");
+        },
+    },
+    day_6: {
+        type: Number,
+        default: 0,
+        validate(value) {
+            if (value < 0) throw new Error("Day 6 no puede ser negativo");
+        },
+    },
+    T000000: { type: Number, default: 0 },
+    T001500: { type: Number, default: 0 },
+    T003000: { type: Number, default: 0 },
+    T004500: { type: Number, default: 0 },
+    T010000: { type: Number, default: 0 },
+    T011500: { type: Number, default: 0 },
+    T013000: { type: Number, default: 0 },
+    T014500: { type: Number, default: 0 },
+    T020000: { type: Number, default: 0 },
+    T021500: { type: Number, default: 0 },
+    T023000: { type: Number, default: 0 },
+    T024500: { type: Number, default: 0 },
+    T030000: { type: Number, default: 0 },
+    T031500: { type: Number, default: 0 },
+    T033000: { type: Number, default: 0 },
+    T034500: { type: Number, default: 0 },
+    T040000: { type: Number, default: 0 },
+    T041500: { type: Number, default: 0 },
+    T043000: { type: Number, default: 0 },
+    T044500: { type: Number, default: 0 },
+    T050000: { type: Number, default: 0 },
+    T051500: { type: Number, default: 0 },
+    T053000: { type: Number, default: 0 },
+    T054500: { type: Number, default: 0 },
+    T060000: { type: Number, default: 0 },
+    T061500: { type: Number, default: 0 },
+    T063000: { type: Number, default: 0 },
+    T064500: { type: Number, default: 0 },
+    T070000: { type: Number, default: 0 },
+    T071500: { type: Number, default: 0 },
+    T073000: { type: Number, default: 0 },
+    T074500: { type: Number, default: 0 },
+    T080000: { type: Number, default: 0 },
+    T081500: { type: Number, default: 0 },
+    T083000: { type: Number, default: 0 },
+    T084500: { type: Number, default: 0 },
+    T090000: { type: Number, default: 0 },
+    T091500: { type: Number, default: 0 },
+    T093000: { type: Number, default: 0 },
+    T094500: { type: Number, default: 0 },
+    T100000: { type: Number, default: 0 },
+    T101500: { type: Number, default: 0 },
+    T103000: { type: Number, default: 0 },
+    T104500: { type: Number, default: 0 },
+    T110000: { type: Number, default: 0 },
+    T111500: { type: Number, default: 0 },
+    T113000: { type: Number, default: 0 },
+    T114500: { type: Number, default: 0 },
+    T120000: { type: Number, default: 0 },
+    T121500: { type: Number, default: 0 },
+    T123000: { type: Number, default: 0 },
+    T124500: { type: Number, default: 0 },
+    T130000: { type: Number, default: 0 },
+    T131500: { type: Number, default: 0 },
+    T133000: { type: Number, default: 0 },
+    T134500: { type: Number, default: 0 },
+    T140000: { type: Number, default: 0 },
+    T141500: { type: Number, default: 0 },
+    T143000: { type: Number, default: 0 },
+    T144500: { type: Number, default: 0 },
+    T150000: { type: Number, default: 0 },
+    T151500: { type: Number, default: 0 },
+    T153000: { type: Number, default: 0 },
+    T154500: { type: Number, default: 0 },
+    T160000: { type: Number, default: 0 },
+    T161500: { type: Number, default: 0 },
+    T163000: { type: Number, default: 0 },
+    T164500: { type: Number, default: 0 },
+    T170000: { type: Number, default: 0 },
+    T171500: { type: Number, default: 0 },
+    T173000: { type: Number, default: 0 },
+    T174500: { type: Number, default: 0 },
+    T180000: { type: Number, default: 0 },
+    T181500: { type: Number, default: 0 },
+    T183000: { type: Number, default: 0 },
+    T184500: { type: Number, default: 0 },
+    T190000: { type: Number, default: 0 },
+    T191500: { type: Number, default: 0 },
+    T193000: { type: Number, default: 0 },
+    T194500: { type: Number, default: 0 },
+    T200000: { type: Number, default: 0 },
+    T201500: { type: Number, default: 0 },
+    T203000: { type: Number, default: 0 },
+    T204500: { type: Number, default: 0 },
+    T210000: { type: Number, default: 0 },
+    T211500: { type: Number, default: 0 },
+    T213000: { type: Number, default: 0 },
+    T214500: { type: Number, default: 0 },
+    T220000: { type: Number, default: 0 },
+    T221500: { type: Number, default: 0 },
+    T223000: { type: Number, default: 0 },
+    T224500: { type: Number, default: 0 },
+    T230000: { type: Number, default: 0 },
+    T231500: { type: Number, default: 0 },
+    T233000: { type: Number, default: 0 },
+    T234500: { type: Number, default: 0 },
+});
+
+const Train = model("train", TrainSchema);
+
+module.exports = Train;
