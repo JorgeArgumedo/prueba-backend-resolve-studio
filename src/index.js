@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 2000;
 const app = express();
 database();
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(require("morgan")("combined"));
+// app.use(require("morgan")("combined"));
 
 app.use("/", authRouter);
 app.use(

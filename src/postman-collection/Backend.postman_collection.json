@@ -22,7 +22,7 @@
 					"urlencoded": [
 						{
 							"key": "email",
-							"value": "matias2@prueba.com",
+							"value": "matias6@prueba.com",
 							"type": "text"
 						},
 						{
@@ -33,12 +33,13 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:2000/signup",
-					"protocol": "http",
+					"raw": "https://prueba-backend-resolve-studio.azurewebsites.net/signup",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"prueba-backend-resolve-studio",
+						"azurewebsites",
+						"net"
 					],
-					"port": "2000",
 					"path": [
 						"signup"
 					]
@@ -52,19 +53,20 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:2000/signin?email=matias2@prueba.com&password=prueba",
-					"protocol": "http",
+					"raw": "https://prueba-backend-resolve-studio.azurewebsites.net/signin?email=matias6@prueba.com&password=prueba",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"prueba-backend-resolve-studio",
+						"azurewebsites",
+						"net"
 					],
-					"port": "2000",
 					"path": [
 						"signin"
 					],
 					"query": [
 						{
 							"key": "email",
-							"value": "matias2@prueba.com"
+							"value": "matias6@prueba.com"
 						},
 						{
 							"key": "password",
@@ -84,12 +86,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:2000/paramtoken/profile?secret_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVlNjVjZTRmMjk3MDFiMzViODU5NmFhZSIsImVtYWlsIjoibWF0aWFzMkBwcnVlYmEuY29tIn0sImlhdCI6MTU4MzczMDI4M30.YGgTFGNAcQfLsxi49NdAjiPT5zgleMEY0TwizTDkres",
-					"protocol": "http",
+					"raw": "https://prueba-backend-resolve-studio.azurewebsites.net/paramtoken/profile?secret_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVlNjYxMjMxNDYzYTQxMDA0NDEwYWNjMyIsImVtYWlsIjoibWF0aWFzNkBwcnVlYmEuY29tIn0sImlhdCI6MTU4Mzc0NzY4NH0.rGsV64fSFLm1GfzSjuD7O9a1byCsBFMVYE9DM9rajQc",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"prueba-backend-resolve-studio",
+						"azurewebsites",
+						"net"
 					],
-					"port": "2000",
 					"path": [
 						"paramtoken",
 						"profile"
@@ -97,7 +100,7 @@
 					"query": [
 						{
 							"key": "secret_token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVlNjVjZTRmMjk3MDFiMzViODU5NmFhZSIsImVtYWlsIjoibWF0aWFzMkBwcnVlYmEuY29tIn0sImlhdCI6MTU4MzczMDI4M30.YGgTFGNAcQfLsxi49NdAjiPT5zgleMEY0TwizTDkres"
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVlNjYxMjMxNDYzYTQxMDA0NDEwYWNjMyIsImVtYWlsIjoibWF0aWFzNkBwcnVlYmEuY29tIn0sImlhdCI6MTU4Mzc0NzY4NH0.rGsV64fSFLm1GfzSjuD7O9a1byCsBFMVYE9DM9rajQc"
 						}
 					]
 				}
@@ -112,7 +115,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVlNjViYjgxZDZiOTdhNDcxMGVhMmQ4ZCIsImVtYWlsIjoiam9yZ2VlYXZAcHJ1ZWJhLmNvbSJ9LCJpYXQiOjE1ODM3MjcwOTZ9.iGHesW_POTHAsZ8BSkyEKm2c7ynWvHAIJSizHHEoax8",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVlNjYxMjMxNDYzYTQxMDA0NDEwYWNjMyIsImVtYWlsIjoibWF0aWFzNkBwcnVlYmEuY29tIn0sImlhdCI6MTU4Mzc0NzY4NH0.rGsV64fSFLm1GfzSjuD7O9a1byCsBFMVYE9DM9rajQc",
 							"type": "string"
 						}
 					]
@@ -120,12 +123,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:2000/bearertoken/trains",
-					"protocol": "http",
+					"raw": "https://prueba-backend-resolve-studio.azurewebsites.net/bearertoken/trains",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"prueba-backend-resolve-studio",
+						"azurewebsites",
+						"net"
 					],
-					"port": "2000",
 					"path": [
 						"bearertoken",
 						"trains"
@@ -142,7 +146,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVlNjViYjgxZDZiOTdhNDcxMGVhMmQ4ZCIsImVtYWlsIjoiam9yZ2VlYXZAcHJ1ZWJhLmNvbSJ9LCJpYXQiOjE1ODM3MjcwOTZ9.iGHesW_POTHAsZ8BSkyEKm2c7ynWvHAIJSizHHEoax8",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVlNjYxMjMxNDYzYTQxMDA0NDEwYWNjMyIsImVtYWlsIjoibWF0aWFzNkBwcnVlYmEuY29tIn0sImlhdCI6MTU4Mzc0NzY4NH0.rGsV64fSFLm1GfzSjuD7O9a1byCsBFMVYE9DM9rajQc",
 							"type": "string"
 						}
 					]
@@ -167,12 +171,13 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:2000/bearertoken/train",
-					"protocol": "http",
+					"raw": "https://prueba-backend-resolve-studio.azurewebsites.net/bearertoken/train",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"prueba-backend-resolve-studio",
+						"azurewebsites",
+						"net"
 					],
-					"port": "2000",
 					"path": [
 						"bearertoken",
 						"train"
