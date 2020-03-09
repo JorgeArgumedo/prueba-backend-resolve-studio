@@ -4,11 +4,12 @@ El proyecto se publico en heroku https://floating-reef-35097.herokuapp.com/; deb
 
 Por lo que lo publique tambien en azure con el dominio https://prueba-backend-resolve-studio.azurewebsites.net
 
-La base de datos se publico en MongoDB Atlas, con lo cual para ejecutar el proyecto solo debe clonarlo y ejecutar:
-
 La version de node utilizada fue la v12.9.1 y npm v6.10.2
+La base de datos se publico en MongoDB Atlas, con lo cual para ejecutar el proyecto solo debe clonarlo y ejecutar:
 npm install
 npm start
+
+En local, publicarlo requiere mas trabajo sin un sistema de Integracion continua.
 
 La api cuenta con 5 rutas habilitadas:
 La primera ruta permite crear un nuevo usuario que podra loguearse y obtener un token para acceder a las rutas protegidas.
